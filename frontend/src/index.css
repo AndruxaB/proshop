@@ -1,0 +1,15 @@
+main {
+    min-height: 80vh;
+}
+
+.rating {
+    color: red;
+}
+
+.reviews {
+    color: blue;
+}
+
+.nav-link {
+    color: white;
+}
