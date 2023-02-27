@@ -9,7 +9,7 @@ export default function Main() {
         <Routes>
             <Route path='/' element={<HomeScreen />} />
             <Route path='/product/:id' element={<ProductScreen />} />
-            <Route path='/cart/*' element={<CartScreen />} />
+            <Route path='/cart/:id?/:qty?' element={<CartScreen />} />
             <Route path='*' element={<NoPage />} />
         </Routes>
     );

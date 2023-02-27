@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Product from '../components/Product';
@@ -11,15 +12,10 @@ export default function HomeScreen() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        console.log('useEffect fired');
         listProducts(dispatch, setIsLoading);
     }, []);
 
-    console.log('state', state);
-    console.log('isLoading', isLoading);
-
     if (isLoading) return <Loader />;
-
     const { error, products } = state.productList;
     if (error) return <Message variant={'danger'} message={error} />;
 

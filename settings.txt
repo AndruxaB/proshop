@@ -1,0 +1,161 @@
+{
+    // One Dark Pro my settings
+    // "editor.fontSize": 15,
+    // "editor.lineHeight": 20,
+    // "editor.letterSpacing": 0.5,
+
+    // Custom cursor color
+    // "workbench.colorCustomizations": {
+    //   "editorCursor.foreground": "#00af26",
+    //   "terminalCursor.foreground": "#00af26"
+    // },
+
+    // Fonts
+    // "editor.fontFamily": "DejaVu Sans Mono",
+    // "editor.fontFamily": "Apercu Mono",
+    // "editor.fontFamily": "MonoLisa",
+    // "editor.fontFamily": "Cascadia Code",
+    // "editor.fontFamily": "Cascadia Code Light",
+    // "editor.fontFamily": "JetBrains Mono",
+    // "editor.fontFamily": "JetBrains Mono Medium",
+    // "editor.fontFamily": "JetBrains Mono Light",
+    // "editor.fontFamily": "JetBrains Mono ExtraLight", // This font
+    // "editor.fontFamily": "JetBrains Mono Thin",
+    // "editor.fontFamily": "Victor Mono",
+    // "editor.fontFamily": "Iosevka",
+    // "editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "Source Code Pro",
+
+    // HackTheBox Settings
+    // "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
+    // "editor.fontSize": 13,
+    // "editor.fontWeight": "300",
+    // "editor.lineHeight": 20,
+    // "editor.letterSpacing": 0.5,
+    // "editor.fontLigatures": true,
+    // "editor.wordWrap": "on",
+    // "editor.formatOnPaste": true,
+    // "editor.cursorBlinking": "smooth",
+    // ====
+    "editor.formatOnSave": true,
+    // ====
+    "editor.parameterHints.enabled": false,
+    // "editor.hover.enabled": false,
+    // "window.zoomLevel": 0.7
+
+    "editor.guides.bracketPairs": "active",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.cursorStyle": "line",
+    // "json.maxItemsComputed": 15000,
+    "liveServer.settings.donotShowInfoMsg": true,
+
+    // Formatter
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.singleQuote": true,
+    "prettier.printWidth": 120,
+    "editor.wordWrapColumn": 120,
+    "prettier.tabWidth": 4,
+    "editor.tabSize": 4,
+
+    // "[html]": {
+    //   "editor.defaultFormatter": "vscode.html-language-features"
+    // },
+    // "[handlebars]": {
+    //   "editor.defaultFormatter": "vscode.html-language-features"
+    // },
+
+    "files.autoSave": "onFocusChange",
+
+    "workbench.startupEditor": "none",
+    "explorer.confirmDelete": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDragAndDrop": false,
+
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+
+    "editor.unicodeHighlight.includeStrings": false,
+    "explorer.compactFolders": false,
+    "editor.detectIndentation": false,
+    "editor.cursorStyle": "line-thin",
+
+    // // Color Customization
+    "workbench.colorCustomizations": {
+        // Dark+ V2 Experimental
+        // "titleBar.activeBackground": "#050505",
+        // "titleBar.inactiveBackground": "#050505",
+        // "editorGroupHeader.tabsBackground": "#0a0a0a",
+        // "tab.inactiveBackground": "#050505",
+        "tab.activeBorderTop": "#f6be00",
+        "tab.activeBackground": "#0a0a0a",
+        "tab.activeBorder": "#0a0a0a",
+        "activityBar.background": "#050505",
+        "sideBar.background": "#010409",
+        "sideBarSectionHeader.background": "#010409",
+        "editor.background": "#0a0a0a", //#0D1117  #0a0c0f
+        "panel.background": "#010409",
+        "terminal.background": "#010409",
+        "statusBar.background": "#050505",
+        "statusBarItem.remoteBackground": "#050505"
+        // Monokai
+        // "editorCursor.foreground": "#00af26",
+        // "terminalCursor.foreground": "#00af26"
+        // "tab.activeBorderTop": "#B4B4B4"
+        // "tab.inactiveBackground": "#1e1f1c"
+        // Atom One Dark
+        // "tab.activeBorderTop": "#9da5b3"
+        //
+        // One Dark Pro
+        // "tab.activeBorderTop": "#B4B4B4",
+        // // "tab.activeBorderTop": "#6e7074",
+        // "tab.activeBorder": "#282c34"
+        // //
+        // "tab.activeBackground": "#4F5047"
+        // "tab.activeBorderTop": "#D2D3CD"
+        // "tab.activeBorder": "#D2D3CD"
+        //
+        // "tab.activeBorder": "#ffc400",
+        // "tab.activeBackground": "#0f0f0f",
+        // "tab.inactiveBackground": "#0f0f0f",
+        // "tab.hoverBackground": "#0f0f0f",
+        // "editorGroupHeader.tabsBackground": "#0f0f0f",
+        // "titleBar.activeBackground": "#0f0f0f",
+        //---
+        // "tab.activeBackground": "#0D1117",
+        // "tab.activeBorder": "#0D1117",
+        // "tab.activeBorderTop": "#f7c90fc7",
+        // "activityBar.background": "#0f0f0f",
+        // "sideBar.background": "#010409",
+        // "sideBarSectionHeader.background": "#010409",
+        // "editor.background": "#0D1117",
+        // "panel.background": "#010409",
+        // "terminal.background": "#010409",
+        // "statusBar.background": "#0f0f0f"
+        //---
+        // "editor.lineHighlightBackground": "#000000",
+        // "editor.wordHighlightBorder": "#000000",
+        // "editorCursor.foreground": "#d6c208",
+        // "terminalCursor.foreground": "#1a7911"
+        // "editor.selectionHighlightBorder": "#6e4b00",
+        // "editor.wordHighlightBackground": "#303030",
+        // "editorBracketMatch.background": "#303030",
+        // "editorBracketMatch.border": "#303030"
+    },
+    "prettier.jsxSingleQuote": true,
+    "workbench.editor.tabSizing": "shrink",
+    "git.autofetch": true,
+    "workbench.iconTheme": "vs-nomo-dark",
+    "git.enableSmartCommit": true,
+    "workbench.colorTheme": "Default Dark+ Experimental"
+
+    // "thunder-client.codeSnippetLanguage": "cs-httpclient",
+    // "css.enabledLanguages": ["html", "handlebars"],
+
+    // Custom settings from Internet
+    // "files.associations": {
+    //   "*.js": "javascriptreact"
+    // }
+}

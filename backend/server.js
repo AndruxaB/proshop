@@ -22,5 +22,3 @@ app.listen(port, () => {
     connectDB();
     console.log(`Server running in ${process.env.NODE_ENV} mode on port ${port}`);
 });
-
-// Trying GitHub test 05.02.23

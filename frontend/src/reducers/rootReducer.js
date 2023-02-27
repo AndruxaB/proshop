@@ -14,6 +14,7 @@ const combineReducers = (slices) => (state, action) =>
 
 const cartItemsFromStorage = localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : [];
 
+// export const initialState = {}; // some initial state for reducers
 export const initialState = { cart: { cartItems: cartItemsFromStorage } }; // some initial state for reducers
 
 export const rootReducer = combineReducers({

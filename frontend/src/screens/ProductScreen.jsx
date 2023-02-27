@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from 'react';
 import { Row, Col, Image, ListGroup, Card, Button, ListGroupItem, FormControl } from 'react-bootstrap';
 import { useParams, Link, useNavigate } from 'react-router-dom';
@@ -15,19 +16,17 @@ export default function ProductScreen() {
     const [qty, setQty] = useState(1);
 
     useEffect(() => {
-        console.log('useEffect fired');
         listProductDetails(id, dispatch, setIsLoading);
     }, []);
 
-    console.log('state', state);
-    console.log('isLoading', isLoading);
-
     if (isLoading) return <Loader />;
+
     const { error, product } = state.productDetails;
+
     if (error) return <Message variant={'danger'} message={error} />;
 
     const addToCart = (e) => {
-        navigate(`/cart/${id}?qty=${qty}`);
+        navigate(`/cart/${id}/${qty}`);
     };
 
     return (
