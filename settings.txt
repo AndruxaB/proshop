@@ -45,9 +45,9 @@
 
     "editor.guides.bracketPairs": "active",
     "editor.unicodeHighlight.nonBasicASCII": false,
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "terminal.integrated.cursorStyle": "line",
+    // "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    // "terminal.integrated.cursorStyle": "line",
     // "json.maxItemsComputed": 15000,
     "liveServer.settings.donotShowInfoMsg": true,
 
@@ -80,7 +80,6 @@
     "editor.unicodeHighlight.includeStrings": false,
     "explorer.compactFolders": false,
     "editor.detectIndentation": false,
-    "editor.cursorStyle": "line-thin",
 
     // // Color Customization
     "workbench.colorCustomizations": {
@@ -89,6 +88,12 @@
         // "titleBar.inactiveBackground": "#050505",
         // "editorGroupHeader.tabsBackground": "#0a0a0a",
         // "tab.inactiveBackground": "#050505",
+
+        "editor.selectionBackground": "#ff00ff91",
+
+        "editor.wordHighlightBackground": "#69696955",
+        "editor.lineHighlightBorder": "#191919",
+
         "tab.activeBorderTop": "#f6be00",
         "tab.activeBackground": "#0a0a0a",
         "tab.activeBorder": "#0a0a0a",
@@ -100,6 +105,8 @@
         "terminal.background": "#010409",
         "statusBar.background": "#050505",
         "statusBarItem.remoteBackground": "#050505"
+
+        // "editorCursor.foreground": "#ff0000"
         // Monokai
         // "editorCursor.foreground": "#00af26",
         // "terminalCursor.foreground": "#00af26"
@@ -147,9 +154,17 @@
     "prettier.jsxSingleQuote": true,
     "workbench.editor.tabSizing": "shrink",
     "git.autofetch": true,
-    "workbench.iconTheme": "vs-nomo-dark",
     "git.enableSmartCommit": true,
-    "workbench.colorTheme": "Default Dark+ Experimental"
+    "workbench.colorTheme": "Default Dark+ Experimental",
+    "editor.cursorStyle": "line-thin",
+    "workbench.iconTheme": "vs-nomo-dark",
+    "editor.matchBrackets": "never",
+    "indentRainbow.indicatorStyle": "light",
+    "indentRainbow.lightIndicatorStyleLineWidth": 3,
+    "vsicons.dontShowNewVersionMessage": true,
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true
 
     // "thunder-client.codeSnippetLanguage": "cs-httpclient",
     // "css.enabledLanguages": ["html", "handlebars"],

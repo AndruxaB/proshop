@@ -4,7 +4,7 @@ import * as actionTypes from '../constants/productActionTypes';
 
 export const listProducts = async (dispatch, setIsLoading) => {
     try {
-        // dispatch({ type: actionTypes.PRODUCT_LIST_REQUEST });
+        dispatch({ type: actionTypes.PRODUCT_LIST_REQUEST });
         // Setting delay for testing purposes
         await helpers.delayMs(500);
 
@@ -23,7 +23,6 @@ export const listProductDetails = async (id, dispatch, setIsLoading) => {
         await helpers.delayMs(500);
 
         const { data } = await axios.get(`http://localhost:5000/api/products/${id}`);
-        // console.log(data);
         dispatch({ type: actionTypes.PRODUCT_DETAILS_SUCCESS, payload: data });
         setIsLoading(false);
     } catch (error) {

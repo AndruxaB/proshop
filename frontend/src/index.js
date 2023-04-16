@@ -3,7 +3,7 @@ import './index.css';
 import './bootstrap.min.css';
 import App from './App';
 
-// // Global state
+// Global state
 // import reducer, { initialState } from './state/reducer';
 // import { StateProvider } from './state/StateProvider';
 import { StoreProvider } from './store/StoreProvider';

@@ -8,15 +8,19 @@ import Loader from '../components/Loader';
 import Message from '../components/Message';
 
 export default function HomeScreen() {
-    const [state, dispatch] = useStoreProvider();
+    console.log('Home screen start');
+    const [store, dispatch] = useStoreProvider();
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
+        console.log('Home screen useEffect');
         listProducts(dispatch, setIsLoading);
     }, []);
 
     if (isLoading) return <Loader />;
-    const { error, products } = state.productList;
+
+    const { error, products } = store.productList;
+
     if (error) return <Message variant={'danger'} message={error} />;
 
     return (

@@ -10,7 +10,7 @@ import Rating from '../components/Rating';
 
 export default function ProductScreen() {
     const navigate = useNavigate();
-    const [state, dispatch] = useStoreProvider();
+    const [store, dispatch] = useStoreProvider();
     const { id } = useParams();
     const [isLoading, setIsLoading] = useState(true);
     const [qty, setQty] = useState(1);
@@ -21,7 +21,7 @@ export default function ProductScreen() {
 
     if (isLoading) return <Loader />;
 
-    const { error, product } = state.productDetails;
+    const { error, product } = store.productDetails;
 
     if (error) return <Message variant={'danger'} message={error} />;
 
@@ -65,7 +65,7 @@ export default function ProductScreen() {
                             <ListGroupItem>
                                 <Row>
                                     <Col>Status:</Col>
-                                    <Col>{product.countInStock > 0 ? 'In Stock' : 'Out Of Stock'}</Col>
+                                    <Col>{product.countInStock > 0 ? 'In Stock!' : 'Out Of Stock'}</Col>
                                 </Row>
                             </ListGroupItem>
 
