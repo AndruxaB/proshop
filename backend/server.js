@@ -27,15 +27,6 @@ app.use('/api/users', userRoutes);
 app.use(notFound);
 app.use(errorHandler);
 
-app.use((req, res, next) => {
-    try {
-        console.log('NORMAL FLOW');
-        next();
-    } catch (error) {
-        res.status(404).json({ message: error.message, stack: error.stack });
-    }
-});
-
 // Start server
 app.listen(port, () => {
     connectDB();
