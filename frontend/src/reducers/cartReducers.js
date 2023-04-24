@@ -1,9 +1,9 @@
-import * as actionTypes from '../constants/cartActionTypes';
+import { CART_ADD_ITEM, CART_REMOVE_ITEM } from '../constants/cartActionTypes';
 
 // export const cartReducer = (state = { cartItems: [] }, action) => {
 export const cartReducer = (state, action) => {
     switch (action.type) {
-        case actionTypes.CART_ADD_ITEM:
+        case CART_ADD_ITEM:
             const item = action.payload;
             const existItem = state.cartItems.find((x) => x.product === item.product);
             if (existItem) {
@@ -16,7 +16,7 @@ export const cartReducer = (state, action) => {
                 return { cartItems };
             }
 
-        case actionTypes.CART_REMOVE_ITEM:
+        case CART_REMOVE_ITEM:
             console.log('remove reducer', action.payload);
             const cartItems = state.cartItems.filter((item) => item.product !== action.payload.id);
             localStorage.setItem('cartItems', JSON.stringify(cartItems));

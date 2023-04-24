@@ -1,13 +1,20 @@
-import * as actionTypes from '../constants/productActionTypes';
+import {
+    PRODUCT_DETAILS_REQUEST,
+    PRODUCT_DETAILS_SUCCESS,
+    PRODUCT_DETAILS_FAIL,
+    PRODUCT_LIST_REQUEST,
+    PRODUCT_LIST_SUCCESS,
+    PRODUCT_LIST_FAIL,
+} from '../constants/productActionTypes';
 
 export const productListReducer = (state, action) => {
     const { type, payload } = action;
     switch (type) {
-        case actionTypes.PRODUCT_LIST_REQUEST:
+        case PRODUCT_LIST_REQUEST:
             return { products: [] };
-        case actionTypes.PRODUCT_LIST_SUCCESS:
+        case PRODUCT_LIST_SUCCESS:
             return { products: payload };
-        case actionTypes.PRODUCT_LIST_FAIL:
+        case PRODUCT_LIST_FAIL:
             return { error: payload };
         default:
             return state;
@@ -17,11 +24,11 @@ export const productListReducer = (state, action) => {
 export const productDetailsReducer = (state, action) => {
     const { type, payload } = action;
     switch (type) {
-        case actionTypes.PRODUCT_DETAILS_REQUEST:
+        case PRODUCT_DETAILS_REQUEST:
             return { product: {} };
-        case actionTypes.PRODUCT_DETAILS_SUCCESS:
+        case PRODUCT_DETAILS_SUCCESS:
             return { product: payload };
-        case actionTypes.PRODUCT_DETAILS_FAIL:
+        case PRODUCT_DETAILS_FAIL:
             return { error: payload };
         default:
             return state;

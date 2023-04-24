@@ -8,7 +8,7 @@ export const listProducts = async (dispatch, setIsLoading) => {
         // Setting delay for testing purposes
         await helpers.delayMs(500);
 
-        const { data } = await axios.get('http://localhost:5000/api/products');
+        const { data } = await axios.get('/api/products');
         dispatch({ type: actionTypes.PRODUCT_LIST_SUCCESS, payload: data });
         setIsLoading(false);
     } catch (error) {
@@ -22,7 +22,7 @@ export const listProductDetails = async (id, dispatch, setIsLoading) => {
         // Setting delay for testing purposes
         await helpers.delayMs(500);
 
-        const { data } = await axios.get(`http://localhost:5000/api/products/${id}`);
+        const { data } = await axios.get(`/api/products/${id}`);
         dispatch({ type: actionTypes.PRODUCT_DETAILS_SUCCESS, payload: data });
         setIsLoading(false);
     } catch (error) {
