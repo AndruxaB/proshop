@@ -1,5 +1,5 @@
 import axios from 'axios';
-import * as actionTypes from '../constants/cartActionTypes';
+import { CART_ADD_ITEM, CART_REMOVE_ITEM } from '../constants/cartActionTypes';
 
 export const addToCart = async (id, qty, dispatch) => {
     try {
@@ -12,7 +12,7 @@ export const addToCart = async (id, qty, dispatch) => {
             countInStock: data.countInStock,
             qty: Number(qty),
         };
-        dispatch({ type: actionTypes.CART_ADD_ITEM, payload });
+        dispatch({ type: CART_ADD_ITEM, payload });
     } catch (error) {}
 };
 
@@ -20,6 +20,6 @@ export const removeFromCart = (id, dispatch) => {
     console.log('action remove', id);
     // const payload = { id };
     try {
-        dispatch({ type: actionTypes.CART_REMOVE_ITEM, payload: { id } });
+        dispatch({ type: CART_REMOVE_ITEM, payload: { id } });
     } catch (error) {}
 };
