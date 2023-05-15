@@ -19,7 +19,7 @@ export async function authUser(req, res, next) {
             });
         } else {
             res.status(401);
-            throw new Error('Invalid email password');
+            throw new Error('Invalid email or password');
         }
     } catch (error) {
         next(error);

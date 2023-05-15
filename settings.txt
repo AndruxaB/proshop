@@ -40,10 +40,6 @@
     "editor.formatOnSave": true,
     // ====
     "editor.parameterHints.enabled": false,
-    // "editor.hover.enabled": false,
-    // "window.zoomLevel": 0.7
-
-    "editor.guides.bracketPairs": "active",
     "editor.unicodeHighlight.nonBasicASCII": false,
     // "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
@@ -89,18 +85,23 @@
         // "editorGroupHeader.tabsBackground": "#0a0a0a",
         // "tab.inactiveBackground": "#050505",
 
-        "editor.selectionBackground": "#ff00ff91",
+        // "editor.selectionBackground": "#ff00ff91",
 
-        "editor.wordHighlightBackground": "#69696955",
-        "editor.lineHighlightBorder": "#191919",
+        // "editor.wordHighlightBackground": "#69696955",
+        // "editor.lineHighlightBorder": "#191919",
 
+        "tab.inactiveBackground": "#1E1F1C",
+        "tab.hoverBackground": "#292B26",
         "tab.activeBorderTop": "#f6be00",
         "tab.activeBackground": "#0a0a0a",
         "tab.activeBorder": "#0a0a0a",
+
+        // "editor.lineHighlightBackground": "#0a0a0a",
+        "editor.background": "#0a0a0a", //#0D1117  #0a0c0f
+
         "activityBar.background": "#050505",
         "sideBar.background": "#010409",
         "sideBarSectionHeader.background": "#010409",
-        "editor.background": "#0a0a0a", //#0D1117  #0a0c0f
         "panel.background": "#010409",
         "terminal.background": "#010409",
         "statusBar.background": "#050505",
@@ -155,16 +156,20 @@
     "workbench.editor.tabSizing": "shrink",
     "git.autofetch": true,
     "git.enableSmartCommit": true,
-    "workbench.colorTheme": "Default Dark+ Experimental",
     "editor.cursorStyle": "line-thin",
     "workbench.iconTheme": "vs-nomo-dark",
-    "editor.matchBrackets": "never",
     "indentRainbow.indicatorStyle": "light",
     "indentRainbow.lightIndicatorStyleLineWidth": 3,
     "vsicons.dontShowNewVersionMessage": true,
     "editor.smoothScrolling": true,
     "workbench.list.smoothScrolling": true,
-    "terminal.integrated.smoothScrolling": true
+    "terminal.integrated.smoothScrolling": true,
+    "errorLens.messageBackgroundMode": "none",
+    "errorLens.followCursor": "closestProblem",
+    "editor.matchBrackets": "never",
+    "workbench.colorTheme": "Monokai",
+    "editor.occurrencesHighlight": false,
+    "editor.renderLineHighlight": "none"
 
     // "thunder-client.codeSnippetLanguage": "cs-httpclient",
     // "css.enabledLanguages": ["html", "handlebars"],

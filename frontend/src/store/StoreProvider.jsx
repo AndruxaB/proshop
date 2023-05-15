@@ -16,7 +16,7 @@ export const StoreProvider = ({ children }) => {
     return <StoreContext.Provider value={[state, dispatch]}>{children}</StoreContext.Provider>;
 };
 
-// использовать в компонетнтах получить доступ до стора
+// использовать в компонетнтах, чтобы получить доступ до стора
 export function useStoreProvider() {
     return useContext(StoreContext);
 }
